@@ -27,7 +27,18 @@ const getReturnValues = (countDown) => {
   const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
 
-  return [days, hours, minutes, seconds];
+  return [
+    padWithZeros(days, 2),
+    padWithZeros(hours, 2),
+    padWithZeros(minutes, 2),
+    padWithZeros(seconds, 2),
+  ];
 };
+
+function padWithZeros(number, minLength) {
+  const numberString = number.toString();
+  if (numberString.length >= minLength) return numberString;
+  return '0'.repeat(minLength - numberString.length) + numberString;
+}
 
 export { useCountdown };
