@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Timer = () => {
+const Timer = ({ value, name }) => {
   return (
     <div className="flex flex-col items-center gap-[1.5rem]">
       <div
@@ -14,14 +14,14 @@ const Timer = () => {
               'relative h-full px-[.25em] pb-[0em] pt-[.425em] brightness-[83%] overflow-hidden leading-none rounded-t-[.25rem] sm:rounded-t-md text-center w-full  top'
             }
           >
-            00
+            {value}
           </div>
           <div
             className={
               'absolute text-[#fb6087] top-0 inset-x-0 h-full px-[.25em] pb-[0em] pt-[.425em] brightness-[83%] overflow-hidden leading-none rounded-t-[.25rem] sm:rounded-t-md text-center w-full  top-flip'
             }
           >
-            00
+            {value}
           </div>
         </div>
         <div className="container-bottom relative h-[50%] bg-[#34364f] rounded-lg">
@@ -30,19 +30,19 @@ const Timer = () => {
               'relative flex justify-center items-end h-full px-[.25em] pt-[0em] pb-[.425em] overflow-hidden leading-none rounded-b-[.25rem] sm:rounded-b-md text-center w-full bottom '
             }
           >
-            00
+            {value}
           </div>
           <div
             className={
               'absolute text-[#fa5c88] top-0 inset-x-0 flex justify-center items-end h-full px-[.25em] pt-[0em] pb-[.425em]  overflow-hidden leading-none rounded-b-[.25rem] sm:rounded-b-md text-center w-full  bottom-flip'
             }
           >
-            00
+            {value}
           </div>
         </div>
       </div>
       <h2 className="text-gray-400 uppercase tracking-[.2rem] text-[.5rem] sm:text-[1rem]">
-        Hour
+        {name}
       </h2>
     </div>
   );
