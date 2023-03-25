@@ -13,16 +13,16 @@ function App() {
   return (
     <>
       <div
-        className="h-screen flex flex-col items-center bg-[#1e1f29] py-32 space-y-28"
+        className="h-screen flex flex-col items-center bg-[#1e1f29] py-[12.4rem] space-y-28"
         style={{ backgroundImage: `url(${star})` }}
       >
         <h1 className="text-white text-xl font-bold capitalize tracking-[0.449em] pt-1">
           WE'RE LAUNCHING SOON
         </h1>
 
-        <div className="flex space-x-2">
-          <Timer value={days} name="Day" />
-          <Timer value={hours} name="Hour" />
+        <div className="flex space-x-7">
+          <Timer value={days} name="Days" />
+          <Timer value={hours} name="Hours" />
           <Timer value={minutes} name="Minutes" />
           <Timer value={seconds} name="Seconds" />
         </div>
