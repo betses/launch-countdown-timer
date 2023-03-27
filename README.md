@@ -1,6 +1,6 @@
-# QR code component solution - Frontend Mentor
+# Launch countdown timer solution - Frontend Mentor
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -9,20 +9,24 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
+Users should be able to:
+
+- See hover states for all interactive elements on the page
+- See a live countdown timer that ticks down every second (start the count at 14 days)the middle
+
 ### Screenshot
 
-![](./src/assets/Screenshot.png)
+![](./src/assets/Screenshot-React.png)
 
 ### Links
 
-- Solution URL: [solution URL here](https://github.com/betses/QR-code-component)
+- Solution URL: [solution URL here](https://github.com/betses/launch-countdown-timert)
 - Live Site URL: [live site URL here](https://lucky-gecko-3a4b67.netlify.app/)
 
 ## My process
@@ -31,10 +35,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [React](https://reactjs.org/)
-
-### Continued development
-
-As I continue to work on projects using Tailwind CSS and React, there are a few areas that I want to focus on in order to improve my skills and produce better results. Firstly, I want to continue refining my understanding of the Tailwind CSS utility classes and how they can be used to create responsive and visually appealing designs. Secondly, I want to explore more advanced React concepts such as state management with Redux or context API, and learn how to integrate third-party libraries and APIs with my projects. Finally, I want to practice writing clean and efficient code, and develop my debugging skills to be able to quickly identify and fix issues in my projects. By focusing on these areas, I hope to become a more proficient and confident developer with Tailwind CSS and React.
 
 ### Useful resources
 
