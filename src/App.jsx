@@ -2,6 +2,9 @@ import footer from './assets/pattern-hills.svg';
 import star from './assets/bg-stars.svg';
 import Timer from './component/Timer';
 import { useCountdown } from './component/useCountdown';
+import facebook from './assets/icon-facebook.svg';
+import instagram from './assets/icon-instagram.svg';
+import pintrest from './assets/icon-pinterest.svg';
 
 function App() {
   const THREE_DAYS_IN_MS = 14 * 24 * 60 * 60 * 1000;
@@ -30,7 +33,19 @@ function App() {
       <footer
         className="absolute bg-cover bottom-0 left-0 w-full h-48"
         style={{ backgroundImage: `url(${footer})` }}
-      ></footer>
+      >
+        <div className="w-full flex justify-center space-x-3 pt-24">
+          <a href="#" alt="facebook">
+            <img className="" src={facebook} alt="facebook SVG" />
+          </a>
+          <a href="#" alt="instagram">
+            <img className="" src={instagram} alt="Instagram SVG" />
+          </a>
+          <a href="#" alt="pintrest">
+            <img className="" src={pintrest} alt="Pintrest SVG" />
+          </a>
+        </div>
+      </footer>
     </>
   );
 }
