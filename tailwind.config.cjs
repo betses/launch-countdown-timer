@@ -1,0 +1,8 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: { fontFamily: { sans: ["Red Hat Text", "sans-serif"] } },
+  },
+  plugins: [],
+};

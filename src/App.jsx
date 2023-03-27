@@ -1,34 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import footer from './assets/pattern-hills.svg';
+import star from './assets/bg-stars.svg';
+import Timer from './component/Timer';
+import { useCountdown } from './component/useCountdown';
+import facebook from './assets/icon-facebook.svg';
+import instagram from './assets/icon-instagram.svg';
+import pintrest from './assets/icon-pinterest.svg';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const THREE_DAYS_IN_MS = 14 * 24 * 60 * 60 * 1000;
+  const NOW_IN_MS = new Date().getTime();
+  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+
+  const [days, hours, minutes, seconds] = useCountdown(dateTimeAfterThreeDays);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <>
+      <div
+        className="h-screen flex flex-col items-center bg-[#1e1f29] py-[12.4rem] space-y-28"
+        style={{ backgroundImage: `url(${star})` }}
+      >
+        <h1 className="text-white text-xl font-bold capitalize tracking-[0.449em] pt-1">
+          WE'RE LAUNCHING SOON
+        </h1>
+
+        <div className="flex space-x-7">
+          <Timer value={days} name="Days" />
+          <Timer value={hours} name="Hours" />
+          <Timer value={minutes} name="Minutes" />
+          <Timer value={seconds} name="Seconds" />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+      <footer
+        className="absolute bg-cover bottom-0 left-0 w-full h-48"
+        style={{ backgroundImage: `url(${footer})` }}
+      >
+        <div className="w-full flex justify-center space-x-3 pt-24">
+          <a href="#" alt="facebook">
+            <img className="" src={facebook} alt="facebook SVG" />
+          </a>
+          <a href="#" alt="instagram">
+            <img className="" src={instagram} alt="Instagram SVG" />
+          </a>
+          <a href="#" alt="pintrest">
+            <img className="" src={pintrest} alt="Pintrest SVG" />
+          </a>
+        </div>
+      </footer>
+    </>
+  );
 }
 
-export default App
+export default App;
