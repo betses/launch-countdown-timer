@@ -35,13 +35,13 @@ function App() {
         style={{ backgroundImage: `url(${footer})` }}
       >
         <div className="w-full flex justify-center space-x-3 pt-24">
-          <a href="https://www.facebook.com" alt="facebook">
+          <a href="https://www.facebook.com">
             <img className="" src={facebook} alt="facebook SVG" />
           </a>
-          <a href="https://www.instagram.com/" alt="instagram">
+          <a href="https://www.instagram.com/">
             <img className="" src={instagram} alt="Instagram SVG" />
           </a>
-          <a href="https://www.pinterest.com/" alt="pintrest">
+          <a href="https://www.pinterest.com/">
             <img className="" src={pintrest} alt="Pintrest SVG" />
           </a>
         </div>
