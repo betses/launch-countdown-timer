@@ -19,11 +19,11 @@ function App() {
         className="h-screen flex flex-col items-center bg-[#1e1f29] py-[12.4rem] space-y-28"
         style={{ backgroundImage: `url(${star})` }}
       >
-        <h1 className="text-white text-xl font-bold capitalize tracking-[0.449em] pt-1">
-          WE'RE LAUNCHING SOON
+        <h1 className="text-white text-sm md:text-xl font-bold capitalize tracking-[0.449em] pt-1">
+          WE&apos;RE LAUNCHING SOON
         </h1>
 
-        <div className="flex space-x-7">
+        <div className="flex space-x-2 md:space-x-7">
           <Timer value={days} name="Days" />
           <Timer value={hours} name="Hours" />
           <Timer value={minutes} name="Minutes" />
@@ -35,13 +35,13 @@ function App() {
         style={{ backgroundImage: `url(${footer})` }}
       >
         <div className="w-full flex justify-center space-x-3 pt-24">
-          <a href="#" alt="facebook">
+          <a href="https://www.facebook.com" alt="facebook">
             <img className="" src={facebook} alt="facebook SVG" />
           </a>
-          <a href="#" alt="instagram">
+          <a href="https://www.instagram.com/" alt="instagram">
             <img className="" src={instagram} alt="Instagram SVG" />
           </a>
-          <a href="#" alt="pintrest">
+          <a href="https://www.pinterest.com/" alt="pintrest">
             <img className="" src={pintrest} alt="Pintrest SVG" />
           </a>
         </div>
